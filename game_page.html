@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Math Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body
+{
+	background: #beefff;
+	text-align: center;
+}
+
+	.login_div1 , .login_div2
+	{
+		padding: 10px;
+		float: none;
+	}
+
+
+#player1_name , #player2_name
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+#word
+{
+	width: 60%;
+}
+#word_display
+{
+	letter-spacing: 5px;
+}
+#output
+{
+background: white;
+border-radius: 10px;
+border-top: 10px solid #AA4465;
+padding: 10px;
+float: none;
+text-align: left;
+}
+img{
+	height: 100px;
+	border-radius: 20px;
+}
+#NextPagey{
+	background-color:hotpink;
+	color: lavenderblush;
+	font-family:'Lucida Grande';
+}
+
+</style>
+<body>
+
+<div class="container">
+	<center>
+		<h3 id="player1_name" style="color: rgb(49, 0, 0);"></h3>
+		<span id="player1_score" style="color: rgb(80, 55, 0);"></span>
+		<br>
+		<h3 id="player2_name" style="color: rgba(55, 56, 0, 0.897);"></h3>
+		<span id="player2_score" style="color: rgb(4, 0, 39);"></span>
+		<h2 style="color: white;">Math Game!</h2>
+<h3 id="Qs&Ps" style="color: rgb(37, 0, 51);">Question-</h3>
+<h3 id="Ans" style="color: rgb(73, 0, 49);">Answer-</h3>
+<div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+        <center>
+            <label>Number 1</label>
+            <input id="number1">
+            <label>Number 2</label>
+            <input id="number2">
+        </center>
+		<br>
+<button id="Send" onclick="Send()" style="background-color: rgb(197, 255, 236);">Send</button>
+	</center>
+</div>
+<br>
+<br>
+<script src="game_page.js"></script>
+</body>
+</html> 
